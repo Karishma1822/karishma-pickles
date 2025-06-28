@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karishma Pickles and Snacks| Homemade Indian Pickles & Snacks</title>
+    <meta name="description" content="Taste of Tradition homemade Indian pickles and snacks by Karishma Pickles and Snacks">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        header: "#FFC0CB",  // pure pink
+                        main: "#FFB6C1",    // Pale pink
+                        footer: "#ff0000"   // red
+                    },
+                    fontFamily: {
+                        heading: ["'Playfair Display', serif"],
+                        body: ["'Open Sans', sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdn.shopify.com/s/files/1/1857/6931/files/Indian-Pickle_10cc540d-27e3-4c82-b0ec-1d114a661776_600x600.jpg?v=1655543167<style>
+        .hero-image {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="font-body bg-main text-brown-800">
+<!-- Pink Header -->
+    <header class="bg-header shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://i0.wp.com/ahahomefoods.com/wp-content/uploads/2023/09/AHA-Products-600px-10.png?fit=600%2C600&ssl=1" alt="Karishma Pickles logo - traditional Indian pickle jar with pink background" class="h-12 w-12 rounded-full object-cover border-2 border-black>
+                    <h1 class="ml-3 text-2xl font-heading font-bold text-brown-800">Karishma Pickles</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#login" class="font-semibold text-gray-800 hover:text-white transition">login</a></li>
+                        <li><a href="#home" class="font-semibold text-gray-800 hover:text-white transition">Home</a></li>
+                        <li><a href="#products" class="font-semibold text-gray-800 hover:text-white transition">Products</a></li>
+                        <li><a href="#about" class="font-semibold text-gray-800 hover:text-white transition">About</a></li>
+                        <li><a href="#contact" class="font-semibold text-gray-800 hover:text-white transition">Contact</a></li>
+                        <li><a href="#Cart🛒" class="font-semibold text-gray-800 hover:text-white transition">Cart🛒</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-gray-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<header>
+    <h1>Homemade Pickles & Snacks</h1>
+    <p>Your Cart</p>
+  </header>
+<!-- Main Content -->
+  <main class="container mx-auto p-6">
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <thead class="bg-pink-200 text-brown-800">
+          <tr>
+            <th class="text-left py-3 px-6">Product</th>
+            <th class="text-left py-3 px-6">Quantity</th>
+            <th class="text-left py-3 px-6">Unit Price</th>
+            <th class="text-left py-3 px-6">Subtotal</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-pink-100">
+          <tr>
+            <td class="py-3 px-6">Tomato Pickle</td>
+            <td class="py-3 px-6">3</td>
+            <td class="py-3 px-6">₹280</td>
+            <td class="py-3 px-6">₹840</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-6">chicken Pickle</td>
+            <td class="py-3 px-6">1</td>
+            <td class="py-3 px-6">₹380</td>
+            <td class="py-3 px-6">₹380</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-6">ghee Ariselu and Laddu and Bobbatlu</td>
+            <td class="py-3 px-6">4</td>
+            <td class="py-3 px-6">₹200</td>
+            <td class="py-3 px-6">₹800</td>
+          </tr>
+
+          <tr>
+            <td class="py-3 px-6">jantikalu</td>
+            <td class="py-3 px-6">3</td>
+            <td class="py-3 px-6">₹100</td>
+            <td class="py-3 px-6">₹300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Total -->
+    <div class="mt-6 text-right text-xl font-semibold">
+      Total: ₹2380
+    </div>
+
+    <!-- Checkout Button -->
+    <form action="checkout.html" method="get" class="mt-4 text-right">
+      <button
+        type="submit"
+        class="checkout-button bg-pink-400 text-white font-bold py-2 px-6 rounded hover:bg-pink-500 transition"
+      >
+        Proceed to Checkout
+      </button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Homemade Pickles & Snacks. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
