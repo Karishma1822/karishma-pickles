@@ -1,7 +1,7 @@
 from flask import Flask, render_template_string, request, session, redirect, url_for
 import os
 app = Flask(__name__)
-app.secret_key = 'karishma_secret_key'
+app.secret_key = 'Homemade pickles and snacks_secret_key'
 
 # Temporary in-memory user store
 users = {}
@@ -26,7 +26,7 @@ products_list = [
 
 @app.route('/')
 def home():
-    print("SESSION:", session)  # ← ఈ లైన్ just above return
+    print("SESSION:", session)  
 
     return render_template_string('''
     <!DOCTYPE html>
@@ -57,7 +57,7 @@ def home():
             {% endif %}
         </nav>
 
-        <p>This is the homepage for Karishma Pickles and Snacks.</p>
+        <p>This is the homepage for Homemade Pickles and Snacks.</p>
     </body>
     </html>
     ''')
@@ -172,7 +172,7 @@ def logout():
 def about():
     return render_template_string('''
     <h2>About Us</h2>
-    <p>Karishma Pickles is a homemade pickle and snack brand delivering traditional flavors.</p>
+    <p>Homemade Pickles is a homemade pickle and snack brand delivering traditional flavors.</p>
     <p>We use age-old recipes passed down through generations to preserve authentic taste.</p>
     <p>Each pickle is handmade with love, using high-quality, locally sourced ingredients.</p>
     <p>From spicy to tangy, our pickles cater to every Indian taste preference.</p>
@@ -185,7 +185,7 @@ def about():
 def contact():
     return render_template_string('''
     <h2>Contact Us</h2>
-    <p>Email: contact@karishmapickles.com</p>
+    <p>Email: contact@Homemadepickles.com</p>
     <p>Phone: +91-9876543210</p>
     <a href="/">Back</a>
     ''')
