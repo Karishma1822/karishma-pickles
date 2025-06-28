@@ -1,5 +1,5 @@
 from flask import Flask, render_template_string, request, session, redirect, url_for
-
+import os
 app = Flask(__name__)
 app.secret_key = 'karishma_secret_key'
 
@@ -212,7 +212,8 @@ def success():
     <p>Thank you for your order!</p>
     <a href="/">Back to Home</a>
     ''')
-    if __name__ == '__main__':
-     import os
+
+
+if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host="0.0.0.0", port=port)
